@@ -1,0 +1,19 @@
+scratch-org-def: config/project-scratch-def.json # required in your repo
+# assign-permset: true
+# #permset-name: Dummy_PermSet
+# #run-apex-tests: false # if true, runs all tests in the org
+# #delete-scratch-org: false # don't know what this does
+# show-scratch-org-url: true # displays the url in the deployer app
+# #generate-password: true # auto-generates a password for the scratch org user
+# #package-pre-source : # install, in this order, packages BEFORE the source is pushed
+# #  - 04tB0000000Ln7i #package Id
+# #package-post-source : # install, in this order, packages AFTER the source is pushed
+#   #- 04tB0000000Ln7i #package Id
+# #data-import : # execute data:treei:import plans in the specified order
+# #  - data/importPlan.json
+# #execute-apex:
+#   - scripts/script1.cls
+#   - scripts/script2.cls
+# execute-apex-post-import:
+#   - scripts/script1.cls
+#   - scripts/script2.cls

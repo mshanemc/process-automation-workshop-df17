@@ -32,6 +32,91 @@
             </value>
         </inputParameters>
     </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Legal_Notification</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A4</name>
+        <label>Tell Legal</label>
+        <locationX>100</locationX>
+        <locationY>500</locationY>
+        <actionName>Account.Legal_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_1_A5</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>ContactRecruiting</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A5</name>
+        <label>Recruit Contacts</label>
+        <locationX>100</locationX>
+        <locationY>600</locationY>
+        <actionName>ContactRecruiting</actionName>
+        <actionType>flow</actionType>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>AccountId</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>AccountId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -372,6 +457,9 @@
         <label>Close Open Opptys</label>
         <locationX>100</locationX>
         <locationY>400</locationY>
+        <connector>
+            <targetReference>myRule_1_A4</targetReference>
+        </connector>
         <filters>
             <processMetadataValues>
                 <name>implicit</name>
