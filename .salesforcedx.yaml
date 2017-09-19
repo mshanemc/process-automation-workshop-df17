@@ -3,7 +3,7 @@ scratch-org-def: config/project-scratch-def.json # required in your repo
 # #permset-name: Dummy_PermSet
 # #run-apex-tests: false # if true, runs all tests in the org
 # #delete-scratch-org: false # don't know what this does
-# show-scratch-org-url: true # displays the url in the deployer app
+show-scratch-org-url: true # displays the url in the deployer app
 # #generate-password: true # auto-generates a password for the scratch org user
 # #package-pre-source : # install, in this order, packages BEFORE the source is pushed
 # #  - 04tB0000000Ln7i #package Id
