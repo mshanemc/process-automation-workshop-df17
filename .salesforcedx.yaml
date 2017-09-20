@@ -11,8 +11,8 @@ show-scratch-org-url: true # displays the url in the deployer app
 #   #- 04tB0000000Ln7i #package Id
 # #data-import : # execute data:treei:import plans in the specified order
 # #  - data/importPlan.json
-# #execute-apex:
-#   - scripts/script1.cls
+execute-apex:
+  - apexScripts/setup.cls
 #   - scripts/script2.cls
 # execute-apex-post-import:
 #   - scripts/script1.cls
