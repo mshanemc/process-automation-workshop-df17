@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <defaultValue>"New"</defaultValue>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Reviewed</fullName>
+                <default>false</default>
+                <label>Reviewed</label>
+            </value>
+            <value>
+                <fullName>Interviewing</fullName>
+                <default>false</default>
+                <label>Interviewing</label>
+            </value>
+            <value>
+                <fullName>Hired</fullName>
+                <default>false</default>
+                <label>Hired</label>
+            </value>
+            <value>
+                <fullName>Not Hired</fullName>
+                <default>false</default>
+                <label>Not Hired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

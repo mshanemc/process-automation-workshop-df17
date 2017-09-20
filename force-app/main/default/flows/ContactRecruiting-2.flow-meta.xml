@@ -74,10 +74,17 @@
             <targetReference>CreateReferral</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Save_Referrals</targetReference>
+            <targetReference>Save_Referrals_to_DB</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Save_Referrals_to_DB</name>
+        <label>Save Referrals to DB</label>
+        <locationX>64</locationX>
+        <locationY>534</locationY>
+        <inputReference>Referrals</inputReference>
+    </recordCreates>
     <recordLookups>
         <name>Get_Contacts</name>
         <label>Get Contacts</label>
@@ -102,13 +109,6 @@
         <queriedFields>Email</queriedFields>
         <queriedFields>Title</queriedFields>
     </recordLookups>
-    <recordUpdates>
-        <name>Save_Referrals</name>
-        <label>Save Referrals</label>
-        <locationX>60</locationX>
-        <locationY>549</locationY>
-        <inputReference>Referrals</inputReference>
-    </recordUpdates>
     <startElementReference>Get_Contacts</startElementReference>
     <variables>
         <name>AccountId</name>

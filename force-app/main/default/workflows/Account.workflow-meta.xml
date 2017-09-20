@@ -5,10 +5,6 @@
         <ccEmails>legal@df17workshops.salesforce</ccEmails>
         <description>Legal Notification</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>test-vtsccdletz2k@shane.mclaughlin_company.net</recipient>
-            <type>user</type>
-        </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/Account_Closed_Legal_Notification</template>
     </alerts>
