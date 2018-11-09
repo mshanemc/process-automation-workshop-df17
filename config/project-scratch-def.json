@@ -2,10 +2,12 @@
     "orgName": "workshops",
     "edition": "Developer",
     "description": "Process Automation workshop",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"],
-        "disabled": ["S1EncryptedStoragePref2"]
+    "settings": {
+        "orgPreferenceSettings": {
+            "s1DesktopEnabled": true,
+            "s1EncryptedStoragePref2": false
+        }
     },
-    "hasSampleData" : true
+    "hasSampleData" : "true"
 }
 
