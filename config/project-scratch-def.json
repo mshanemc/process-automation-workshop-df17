@@ -1,13 +1,14 @@
 {
-    "orgName": "workshops",
-    "edition": "Developer",
-    "description": "Process Automation workshop",
-    "settings": {
-        "orgPreferenceSettings": {
-            "s1DesktopEnabled": true,
-            "s1EncryptedStoragePref2": false
-        }
+  "orgName": "workshops",
+  "edition": "Developer",
+  "description": "Process Automation workshop",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
     },
-    "hasSampleData" : "true"
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  },
+  "hasSampleData": true
 }
-
